@@ -1,0 +1,278 @@
+* {
+  /* border-top: 10px solid #1098ad; */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  font-family: sans-serif;
+  color: rgb(0, 0, 0);
+  line-height: 1.4;
+}
+
+.container {
+  width: 825px;
+  margin: 0 auto;
+  margin-top: 30px;
+  /* background: red; */
+}
+
+/* PRODUCT CARD */
+.product {
+  border: 4px solid black;
+  position: relative;
+}
+
+/*  CHALLENGE 1 - FLOAT */
+/* .col-1 {
+  float: left;
+  margin-right: 40px;
+}
+
+.col-2 {
+  margin-top: 20px;
+  width: 243px;
+  margin-right: 40px;
+  float: left;
+}
+
+.col-3 {
+  width: 243px;
+  float: right;
+  margin-top: 20px;
+} */
+
+/* ---------------------------------------------------------- */
+
+/* CHALLENGE 2 - FLEX */
+/* .row {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* 
+    Default value
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto; */
+
+/* .row * {
+  flex: 1 1 0px;
+} */
+
+/* ---------------------------------------------------------- */
+
+/* CHALLENGE 3 - CSS GRID */
+article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 0px;
+  column-gap: 30px;
+}
+
+header {
+  grid-column: 1/-1;
+}
+
+.col-3,
+.col-2 {
+  margin-top: 30px;
+  align-self: start;
+}
+
+button {
+  grid-column: 1/-1;
+}
+/* ---------------------------------------------------------- */
+.sale {
+  text-transform: uppercase;
+  background: red;
+  color: white;
+  position: absolute;
+  padding: 5px 12px;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 2px;
+  top: -19px;
+  left: -40px;
+}
+
+/* CHALLENGE 1 - FLOAT */
+
+/* ---------------------------------------------------------- */
+
+/* CHALLENGE 2 - FLEX */
+
+/* ---------------------------------------------------------- */
+
+.product-title {
+  padding: 10px 0;
+  text-align: center;
+  background: rgb(223, 223, 223);
+  text-transform: uppercase;
+}
+
+/* CHALLENGE 1 - FLOAT */
+
+/* .product-price {
+  font-size: 24px;
+  float: left;
+}
+
+.shipping-price {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #b1b1b1;
+  margin-bottom: 20px;
+  float: right;
+} */
+
+/* ---------------------------------------------------------- */
+
+/* CHALLENGE 2 - FLEX */
+
+.product-pricing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-price {
+  font-size: 24px;
+}
+.shipping-price {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  color: #757575;
+}
+/* ---------------------------------------------------------- */
+
+.product-info {
+  margin-top: 10px;
+  clear: both;
+  font-size: 15px;
+  margin-bottom: 5px;
+  clear: both;
+}
+
+.product-more-info-container {
+  margin-bottom: 40px;
+}
+
+.product-more-info:link,
+.product-more-info:visited {
+  color: black;
+}
+
+.product-more-info:hover,
+.product-more-info:active {
+  text-decoration: none;
+}
+
+/* Color Selector */
+.color-selector {
+  list-style-type: disc;
+}
+
+/* CHALLENGE 1 - FLOAT */
+
+/* .color-selector li {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  display: inline-block;
+} */
+
+/* .color-selector li {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+} */
+
+/* ---------------------------------------------------------- */
+
+/* CHALLENGE 2 - FLEX */
+.color-selector {
+  list-style-type: none;
+  display: flex;
+  flex-basis: 20px;
+  gap: 15px;
+  flex-basis: 35px;
+}
+
+.color-selector * {
+  flex-basis: 24px;
+}
+.color-selector li {
+  height: 24px;
+}
+/* ---------------------------------------------------------- */
+
+.color-selector .c-black {
+  background: black;
+}
+
+.color-selector .c-blue {
+  background: blue;
+}
+
+.color-selector .c-red {
+  background: red;
+}
+
+.color-selector .c-yellow {
+  background: yellow;
+}
+
+.color-selector .c-green {
+  background: greenyellow;
+}
+
+.color-selector .c-brown {
+  background: brown;
+}
+
+/* End of color selector */
+
+.detail-title {
+  text-transform: uppercase;
+  /* margin-bottom: 10px; */
+}
+
+.product-details {
+  margin-left: 30px;
+}
+
+.product-details li {
+  font-size: 16px;
+}
+
+button {
+  border: none;
+  width: 100%;
+  background: black;
+  text-transform: uppercase;
+  color: white;
+  font-size: 24px;
+  padding: 20px 0;
+}
+
+button:hover {
+  cursor: pointer;
+  border-top: 5px solid black;
+  background: white;
+  color: black;
+}
+
+/* END OF PRODUCT CARD */
